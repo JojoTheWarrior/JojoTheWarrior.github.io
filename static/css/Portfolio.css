@@ -1,0 +1,35 @@
+/*defines custom colors*/
+:root {
+    --highlightblue: #7FBDF3;
+    --darkblue: #072C3D;
+    --defaultwhite: #FFFFFF;
+    /*--defaultwhite: #F7FBF3;*/
+    --defaultgray: #525252;
+}
+
+#content {
+    display: flex;
+    padding: 1%;
+    flex-flow: column;
+    align-content: space-between;
+    background-image: url("../img/polka_background.png");
+    background-repeat: repeat;
+    background-size: 100% 2100px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1px;
+}
+
+.intro-section {
+    background-color: var(--defaultwhite);
+    border: solid;
+    border-width: 5px;
+    color: var(--darkblue);
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+    width: 100%;
+    padding: 80px;
+    border-radius: 15px;
+}
+

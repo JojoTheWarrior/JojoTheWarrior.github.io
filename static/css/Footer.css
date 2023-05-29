@@ -1,0 +1,55 @@
+/*defines custom colors*/
+:root {
+    --highlightblue: #7FBDF3;
+    --darkblue: #072C3D;
+    --defaultwhite: #F7FBF3;
+    --defaultgray: #525252;
+}
+
+#footer {
+    display: flex;
+    background-color: var(--darkblue);
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.personal-link-section {
+    justify-content: center;
+    
+}
+
+.logos {
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    border: solid var(--defaultwhite);
+    border-radius: 15px;
+    border-width: 5px;
+    justify-content: center;
+    align-content: center;
+}
+
+.title-spans { 
+    align-self: center;
+    font-size: 35px;
+    color: var(--defaultwhite);
+}
+
+.links {
+    display: flex;
+    flex-flow: row;
+    align-self: center;
+}
+
+.links img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    transition: width 0.25s ease-out, height 0.2s ease-out;
+}
+
+.links img:hover {
+    width: 110px;
+    height: 110px;
+}
