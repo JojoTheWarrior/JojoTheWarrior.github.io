@@ -1,0 +1,69 @@
+/*defines custom colors*/
+:root {
+    --highlightblue: #7FBDF3;
+    --darkblue: #072C3D;
+    --defaultwhite: #F7FBF3;
+    --defaultgray: #525252;
+}
+
+#navigation-bar {
+    /*dark mode toggler*/
+    background-color: var(--defaultwhite);
+    color: var(--darkblue);
+
+    width: 100%;
+    padding: 30px;
+    /*background-image: linear-gradient(var(--darkblue) 5%, var(--highlightblue) 85%);*/
+    background-color: var(--darkblue);
+    display: flex;
+    gap: 100px;
+    justify-content: flex-end;
+    flex-flow: row;
+
+}
+
+.dark-mode {
+    /*dark mode toggler*/
+    background-color: var(--darkblue) !important;
+    color: var(--defaultwhite) !important;
+}
+
+.switch-button {
+    display: flex;
+    background-color: var(--defaultwhite);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 6px 6px var(--darkblue);
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.nav-elem {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color : var(--defaultgray);
+    font-size: 20px;
+}
+
+.active {
+    color: var(--defaultwhite);
+}
+
+.nav-elem:hover {
+    color: var(--defaultwhite); 
+}
+
+.icon {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-flow: column;
+}

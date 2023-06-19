@@ -1,0 +1,65 @@
+:root {
+    --highlightblue: #7FBDF3;
+    --darkblue: #072C3D;
+    --defaultwhite: #F7FBF3;
+    --defaultgray: #525252;
+}
+
+.title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    padding: 0;
+    display: inline-block;
+    margin: 1%;
+    color: var(--defaultwhite);
+    background-color: var(--darkblue);
+    position: relative;
+    transition: font-size 0.25s ease-out;
+}
+
+.title:hover {
+    font-size: 45px;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    transform: scaleX(0);
+
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--highlightblue);
+
+    transform-origin: bottom right;
+
+    transition: transform 0.25s ease-out;
+}
+
+.title:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.collapsible {
+    background-color: var(--darkblue);
+    border-style: solid;
+    border-width: 2px 2px 2px;
+    border-radius: 15px;
+    background-color: var(--darkblue);
+    margin: 15px;
+    display: inline-block;
+}
+
+.content {
+    margin: 1%;
+    padding: 1%;
+    background-color: var(--highlightblue);
+    border-style: solid; 
+    border-radius: 15px;
+}
+
+.header {
+    
+}
