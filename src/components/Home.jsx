@@ -76,12 +76,10 @@ export const Home = () => {
               <li>Fun competitive programming problems</li>
               <li>Cheap supermarket sushi</li>
               <li>Sparkling water</li>
-              <li>Deathly spicy instant noodles</li>
-              <li>Jazzy songs</li>
               <li>Making games</li>
-              <li>Playing chess (especially doing chess puzzles)</li>
+              <li>Playing chess</li>
               <li>Sleeping in on weekends</li>
-              <li>Long and peaceful bike rides</li>
+              <li>Long bike rides</li>
             </ul>
           </div>
           <div className="img-section">

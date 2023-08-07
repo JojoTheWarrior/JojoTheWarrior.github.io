@@ -49,10 +49,6 @@
     color: var(--defaultwhite);
 }
 
-.nav-elem:hover {
-    color: var(--defaultwhite); 
-}
-
 .icon {
     display: flex;
     justify-self: center;

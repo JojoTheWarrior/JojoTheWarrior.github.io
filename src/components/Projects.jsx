@@ -79,23 +79,11 @@ export const Projects = () => {
                 <p>
                 Fatal Friendships is a video game that targets youth between the ages of 10 to 12. 
                 
-                It tells the story of James and Max, two friends who have a toxic friendship, with Max being the main antagonist. 
+                It tells the story of James and Max, two friends who have a toxic friendship, with James being the protagonist. 
                 
                 In the game, the player learns how to identify the characteristics of a toxic friend, how to be a healthier friend, and how to end a toxic friendship.
                 
                 The first two levels contain relaxing gameplay focused on learning, while the third level climaxes with an action-packed boss fight in which the player must apply his previously learned knowledge.
-                
-                <br/><br/>
-                
-                My contribution was the first and third of the three levels (my partner did level 2). 
-              
-                I was also responsible for managing the game structure and file structure.
-              
-                This project taught me a lot about how to apply Object-Oriented Programming to a real project.
-
-                For example, I created classes to generalize multiple choice questions and character dialogue, I used polymorphism to display screens in general (regardless of what type of screen it is), and I used inheritance to create specialized subclasses.
-            
-                Screenshots of the game and a game demo can be found in the ReadMe section of Fatal Friendship's GitHub.
                 </p>
               <h2>Link:</h2>
               <p>

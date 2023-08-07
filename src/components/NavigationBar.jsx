@@ -10,31 +10,37 @@ export const NavigationBar = (props) => {
     console.log(elem + ", " + currentActive);
   }
 
+  const [homeIsHovered, setHomeIsHovered] = useState(false);
+  const [projectsIsHovered, setProjectsIsHovered] = useState(false);
+  const [contactIsHovered, setContactIsHovered] = useState(false);
+
   return (
     <>
       <link rel="stylesheet" href="/static/css/NavigationBar.css"></link>
       <div id="navigation-bar">
         <a href="/">
-          <div className="icon-section">
+          <div className="icon-section" onMouseEnter={() => setHomeIsHovered(true)} onMouseLeave = {() => setHomeIsHovered(false)}>
             <div id="home-nav" className="icon">
-              {props.active === "home" ? <AiFillHome size={35}/> : <AiOutlineHome size={35}/>}
+              {props.active === "home" || homeIsHovered ? <AiFillHome size={35}/> : <AiOutlineHome size={35}/>}
             </div>
-            <p className={"nav-elem " + (props.active === "home" ? "active" : "")}>Home</p>
+            <p className={"nav-elem " + (props.active === "home" || homeIsHovered ? "active" : "")}>Home</p>
           </div>
         </a>
         <a href="/projects">
-          <div className="icon-section">
+          <div className="icon-section" onMouseEnter={() => setProjectsIsHovered(true)} onMouseLeave = {() => setProjectsIsHovered(false)}>
             <div id="home-nav" className="icon">
-            {props.active === "projects" ? <AiFillProject size={35} /> : <AiOutlineProject size={35}/>}    
+              {props.active === "projects" || projectsIsHovered ? <AiFillProject size={35} /> : <AiOutlineProject size={35}/>}    
             </div>
-            <p className={"nav-elem " + (props.active === "projects" ? "active" : "")}>Projects</p>
+            <p className={"nav-elem " + (props.active === "projects" || projectsIsHovered ? "active" : "")}>Projects</p>
           </div>
         </a>
-        <a href="/portfolio">
-          <div className="icon-section">
-          {props.active === "portfolio" ? <AiFillFolderOpen size={35} /> : <AiOutlineFolderOpen size={35}/>}
+        <a href="/contact">
+          <div className="icon-section" onMouseEnter={() => setContactIsHovered(true)} onMouseLeave = {() => setContactIsHovered(false)}>
+            <div id="home-nav" className="icon">
+              {props.active === "contact" || contactIsHovered ? <AiFillFolderOpen size={35} /> : <AiOutlineFolderOpen size={35}/>}
+            </div>
+            <p className={"nav-elem " + (props.active === "contact" || contactIsHovered ? "active" : "")}>Contact Me</p>
           </div>
-          <p className={"nav-elem " + (props.active === "portfolio" ? "active" : "")}>ICS4U_Portfolio</p>
         </a>
         {/* I'll put you back in... someday
         <a href="/photos">
